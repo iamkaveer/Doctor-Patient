@@ -30,3 +30,8 @@ This project is a backend API implementation for a Doctor Patient Management Sys
 4. Run the application.
 5. Access the application in your web browser:
    http://localhost:8080
+
+### Suggesting Doctors API
+The system provides an API to suggest doctors based on a patient's symptom. This API accepts the patient ID and returns the suggested doctors based on the patient's location and symptom. The suggested doctor will have the specialty that matches the patient's symptom.
+- Edge-Case 1: If there are no doctors available in the patient's location (outside Delhi, Noida, Faridabad), the response will be "We are still waiting to expand to your location."
+- Edge-Case 2: If there are no doctors available for the patient's symptom in that location, the response will be "There isn't any doctor present at your location for your symptom."
